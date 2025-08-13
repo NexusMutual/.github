@@ -1,0 +1,77 @@
+# Add/remove labels anytime; re-run the sync workflow to propagate.
+
+- name: "type: bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+  aliases: ["bug"]
+
+- name: "type: feature"
+  color: "a2eeef"
+  description: "New capability or change in behavior"
+  aliases: ["enhancement", "feature"]
+
+- name: "type: docs"
+  color: "0075ca"
+  description: "Documentation or internal notes"
+  aliases: ["documentation", "docs"]
+
+- name: "type: chore"
+  color: "d4c5f9"
+  description: "Maintenance/refactor; no user-facing change"
+  aliases: ["maintenance", "refactor", "build"]
+
+- name: "type: test"
+  color: "e4e669"
+  description: "Unit/integration/CI tests"
+  aliases: ["tests"]
+
+# Priorities (keep 3 tiers; use Project Priority field if preferred)
+- name: "priority: P0"
+  color: "b60205"
+  description: "Critical. Drop everything"
+- name: "priority: P1"
+  color: "d93f0b"
+  description: "High priority"
+- name: "priority: P2"
+  color: "fbca04"
+  description: "Normal priority"
+
+# Areas (slice multi-repo work quickly)
+- name: "area: frontend"
+  color: "1d76db"
+  description: "UI and frontend app work"
+- name: "area: backend"
+  color: "006b75"
+  description: "APIs, services, data"
+- name: "area: smart-contracts"
+  color: "0e8a16"
+  description: "Solidity/contracts & chain interactions"
+- name: "area: infra"
+  color: "bfdadc"
+  description: "CI/CD, deployment, ops"
+
+# Security / SC-specific helpers
+- name: "sec: vulnerability"
+  color: "e99695"
+  description: "Security bug or exposure"
+  aliases: ["security"]
+- name: "sec: audit"
+  color: "5319e7"
+  description: "Audit tasks, findings, follow-up"
+- name: "sec: gas"
+  color: "c2e0c6"
+  description: "Gas optimizations"
+
+# Community / misc
+- name: "good first issue"
+  color: "7057ff"
+  description: "Low-complexity task for newcomers"
+- name: "help wanted"
+  color: "008672"
+  description: "Open to external contributions"
+- name: "breaking change"
+  color: "5319e7"
+  description: "Requires client/consumer changes"
+- name: "dependencies"
+  color: "0366d6"
+  description: "Dependency updates"
